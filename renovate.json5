@@ -1,0 +1,12 @@
+{
+  extends: ["config:recommended"],
+  kubernetes: {
+    fileMatch: [".+\\.ya?ml$"],
+  },
+  packageRules: [
+    {
+      matchPackagePatterns: ["(^|\\/)linuxserver\\/.*$"],
+      versioning: "regex:^(?<prerelease>develop-)?v?(?<major>\\d+)\\.?(?<minor>\\d+)?\\.?(?<patch>\\d+)?(\\.|-)?(?<build>\\w?\\d+)?-ls(?<revision>\\d+)$",
+    },
+  ],
+}
