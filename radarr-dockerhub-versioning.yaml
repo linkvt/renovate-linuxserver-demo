@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: radarr-dockerhub
+spec:
+  selector:
+    matchLabels:
+      app: radarr-dockerhub
+  template:
+    metadata:
+      labels:
+        app: radarr-dockerhub
+    spec:
+      containers:
+        - name: radarr-dockerhub
+          image: linuxserver/radarr:4.7.5.7809-ls186
+        - name: radarr-dockerhub-without-revision
+          image: linuxserver/radarr:4.7.5.7809
+        - name: radarr-dockerhub-without-revision-and-build
+          image: linuxserver/radarr:4.7.5
+        - name: radarr-dockerhub-major-minor
+          image: linuxserver/radarr:4.7
+        - name: radarr-dockerhub-major
+          image: linuxserver/radarr:4

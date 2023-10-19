@@ -4,9 +4,10 @@
     fileMatch: [".+\\.ya?ml$"],
   },
   packageRules: [
-    // {
-    //   matchPackagePatterns: ["(^|\\/)linuxserver\\/.*$"],
-    //   versioning: "regex:^(?<prerelease>develop-)?v?(?<major>\\d+)\\.?(?<minor>\\d+)?\\.?(?<patch>\\d+)?(\\.|-)?(?<build>\\w?\\d+)?-ls(?<revision>\\d+)$",
-    // },
+    {
+      // matchPackagePatterns: ["(^|\\/)linuxserver\\/.*$"],
+      matchFileNames: ["radarr-dockerhub-versioning.yaml"],
+      versioning: "regex:^(?<prerelease>develop-)?v?(?<major>\\d+)\\.?(?<minor>\\d+)?\\.?(?<patch>\\d+)?(\\.|-)?(?<build>\\w?\\d+)?-ls(?<revision>\\d+)$",
+    },
   ],
 }
