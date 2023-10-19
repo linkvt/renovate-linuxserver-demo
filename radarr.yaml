@@ -14,3 +14,11 @@ spec:
       containers:
         - name: radarr
           image: ghcr.io/linuxserver/radarr:4.7.5.7809-ls186
+        - name: radarr-without-revision
+          image: ghcr.io/linuxserver/radarr:4.7.5.7809
+        - name: radarr-without-revision-and-build
+          image: ghcr.io/linuxserver/radarr:4.7.5
+        - name: radarr-major-minor
+          image: ghcr.io/linuxserver/radarr:4.7
+        - name: radarr-major
+          image: ghcr.io/linuxserver/radarr:4
