@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
         - name: radarr-dockerhub
-          image: linuxserver/radarr:4.7.5.7809-ls186
+          image: linuxserver/radarr:4.7.5.7809-ls189
         - name: radarr-dockerhub-without-revision
           image: linuxserver/radarr:4.7.5.7809
         - name: radarr-dockerhub-without-revision-and-build
