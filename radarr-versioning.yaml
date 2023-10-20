@@ -19,6 +19,6 @@ spec:
         - name: radarr-without-revision-and-build
           image: ghcr.io/linuxserver/radarr:4.7.5
         - name: radarr-major-minor
-          image: ghcr.io/linuxserver/radarr:4.7
+          image: ghcr.io/linuxserver/radarr:5.14
         - name: radarr-major
           image: ghcr.io/linuxserver/radarr:4
