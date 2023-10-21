@@ -21,4 +21,4 @@ spec:
         - name: radarr-dockerhub-major-minor
           image: linuxserver/radarr:4.7
         - name: radarr-dockerhub-major
-          image: linuxserver/radarr:4
+          image: linuxserver/radarr:101
